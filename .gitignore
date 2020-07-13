@@ -1,2 +1,6 @@
 /API/node_modules
+<<<<<<< HEAD
 /API/.env
+=======
+/API/.env
+>>>>>>> dc27dec3ce421d2c230be26d82fd6fc43e01e118
