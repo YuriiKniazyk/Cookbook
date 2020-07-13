@@ -1,9 +1,0 @@
-{
-  "development": {
-    "username": "username",
-    "password": "userpassword",
-    "database": "Coockbook",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
