@@ -3,7 +3,7 @@ const {services} = require('../../services');
 
 module.exports = async(req, res, next) => {
     try {
-        const { id } = req.body;
+        const { id } = req.params;
 
         const isRecipePresent = await services.findRecipeById(id);
         if (!isRecipePresent) {

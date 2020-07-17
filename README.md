@@ -1,3 +1,5 @@
+Use the command in console to download the project: git clone https://github.com/YuriiKniazyk/Cookbook.git
+
 To create database run code in console
 
 npm init
@@ -46,3 +48,6 @@ BEGIN
 END$$
 
 DELIMITER ;
+
+Navigate to the API folder and run the backend: nodemon app.js
+Go to the new tab and start the frontend: npm start
