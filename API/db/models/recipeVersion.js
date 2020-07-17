@@ -1,3 +1,5 @@
+const { resolve } = require('path');
+
 module.exports = (sequelize, DataTypes) => {
     const RecipesVersion = sequelize.define('recipeVersion', {
         id: {
@@ -25,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     });
 
-    const Recipe = sequelize.import('./recipe.js');
+    const Recipe = (require(resolve('./db/models/recipe')))(sequelize, DataTypes);
     RecipesVersion.belongsTo(Recipe, {foreignKey: 'recipe_id'});
 
     return RecipesVersion

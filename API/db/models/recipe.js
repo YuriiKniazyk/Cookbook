@@ -16,9 +16,10 @@ module.exports = (sequelize, DataTypes) => {
         version: {
             type: DataTypes.INTEGER,
         }       
-    }, {
+    }, 
+    {
         tableName: 'recipe',
-        timestamps: false
+        timestamps: false,   
     });
     
     return Recipes
